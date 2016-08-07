@@ -4,8 +4,14 @@
   <% } %>
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %><br>
-      <%= __('powered_by') %> <a href="http://hexo.io/" target="_blank">Hexo</a>
+      <div class='footer-info-left'>
+        &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>
+      </div>
+      <section class='footer-info-right'>
+        <p>主机平台<a href='//aliyun.com' target='_blank'> 阿里云</a></p>
+        <p>代码托管<a href='//github.com/wangzhe1995' target='_blank'> GitHub</a></p>
+        <p>Email<a href='mailto:wangzhegoo@gmail.com'> wangzhegoo@gmail.com</a></p>
+      </section>
     </div>
   </div>
 </footer>
